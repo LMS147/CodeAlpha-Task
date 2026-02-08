@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <body>
+  <div class="app-shell">
+    <div class="calculator" aria-label="Calculator">
+      <div class="calculator-inner">
+        <header class="calc-header">
+          <div class="calc-title">
+            <div class="calc-pill">=</div>
+            <div class="calc-title-text">
+              <span>NeonCalc</span>
+              Instant math surface
+            </div>
+          </div>
+          <div class="calc-meta">
+            <div class="indicator"></div>
+            <span class="chip">Keyboard ready</span>
+          </div>
+        </header>
+
+        <section class="display-wrap" aria-live="polite">
+          <div class="display-top">
+            <div class="badge">
+              <span class="badge-dot"></span>
+              Real-time preview
+            </div>
+            <span>Press Enter for result</span>
+          </div>
+          <div class="display-body">
+            <div id="expression" class="expression"></div>
+            <div id="result" class="result">0</div>
+          </div>
+          <div class="helper-row">
+            <span class="helper-key">C</span> clear
+            <span class="helper-key">⌫</span> delete
+            <span class="helper-key">Enter</span> equals
+          </div>
+        </section>
+
+        <main class="keys-grid">
+          <button class="key utility danger" data-key="clear"><span>C</span></button>
+          <button class="key utility" data-key="backspace"><span>⌫</span></button>
+          <button class="key utility" data-key="%"><span>%</span></button>
+          <button class="key operator secondary" data-key="/"><span>÷</span></button>
+
+          <button class="key" data-key="7"><span>7</span></button>
+          <button class="key" data-key="8"><span>8</span></button>
+          <button class="key" data-key="9"><span>9</span></button>
+          <button class="key operator secondary" data-key="*"><span>×</span></button>
+
+          <button class="key" data-key="4"><span>4</span></button>
+          <button class="key" data-key="5"><span>5</span></button>
+          <button class="key" data-key="6"><span>6</span></button>
+          <button class="key operator secondary" data-key="-"><span>−</span></button>
+
+          <button class="key" data-key="1"><span>1</span></button>
+          <button class="key" data-key="2"><span>2</span></button>
+          <button class="key" data-key="3"><span>3</span></button>
+          <button class="key operator secondary" data-key="+"><span>+</span></button>
+
+          <button class="key wide" data-key="0"><span>0</span></button>
+          <button class="key" data-key="."><span>.</span></button>
+          <button class="key operator" data-key="="><span>=</span></button>
+        </main>
+
+        <footer class="footer-note">
+          <span>Use your keyboard: numbers, + − * /, %, Enter, Backspace, Esc.</span>
+          <div class="kbd-grid">
+            <span class="kbd">Esc</span>
+            <span class="kbd">Backspace</span>
+            <span class="kbd">Enter</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
